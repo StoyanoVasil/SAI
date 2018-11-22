@@ -50,22 +50,19 @@ public class BankController implements Initializable {
         this.lvlToSsn = new HashMap<>();
 
         // set event listener
-        this.consumer.setMessageListener(new MessageListener() {
-            @Override
-            public void onMessage(Message message) {
-                try {
-                    // get ListViewLine from message and deserialize from JSON
-                    ListViewLine lvl = deserializeListViewLine(message);
-                    if (lvl == null) return;
+        this.consumer.setMessageListener(message -> {
+            try {
+                // get ListViewLine from message and deserialize from JSON
+                ListViewLine lvl = deserializeListViewLine(message);
+                if (lvl == null) return;
 
-                    // add to map
-                    lvlToSsn.put(lvl, message.getJMSCorrelationID());
+                // add to map
+                lvlToSsn.put(lvl, message.getJMSCorrelationID());
 
-                    // add ListViewLine to the listview
-                    addMessageToLv(lvl);
-                } catch (JMSException e) {
-                    e.printStackTrace();
-                }
+                // add ListViewLine to the listview
+                addMessageToLv(lvl);
+            } catch (JMSException e) {
+                e.printStackTrace();
             }
         });
     }

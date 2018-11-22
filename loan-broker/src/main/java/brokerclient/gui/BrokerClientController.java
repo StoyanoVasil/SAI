@@ -1,5 +1,7 @@
 package brokerclient.gui;
 
+import brokerclient.messageGateway.Consumer;
+import brokerclient.messageGateway.Producer;
 import brokerclient.model.BankInterestReply;
 import brokerclient.model.BankInterestRequest;
 import brokerclient.model.LoanReply;
@@ -18,84 +20,57 @@ import java.util.Properties;
 public class BrokerClientController {
 
     // connection details and queue names
-    private static final String JMS_CONNECTION = "tcp://localhost:61616";
     private static final String JMS_CLIENT_INBOX_QUEUE_NAME = "broker-client";
     private static final String JMS_BANK_INBOX_QUEUE_NAME = "broker-bank";
     private static final String JMS_CLIENT_QUEUE_NAME = "loan-client";
     private static final String JMS_BANK_QUEUE_NAME = "abn-bank";
 
-    // client producer connection objects
-    private Connection clientConnection;
-    private Session clientSession;
-    private Destination clientDestination;
-    private MessageProducer clientProducer;
-
-    // broker-bank connection objects
-    private Connection brokerBankConnection;
-    private Session brokerBankSession;
-    private Destination brokerBankDestination;
-    private MessageConsumer brokerBankConsumer;
-
-    // broker-client connection objects
-    private Connection brokerClientConnection;
-    private Session brokerClientSession;
-    private Destination brokerClientDestination;
-    private MessageConsumer brokerClientConsumer;
-
-    // bank connection objects
-    private Connection bankConnection;
-    private Session bankSession;
-    private Destination bankDestination;
-    private MessageProducer bankProducer;
-
     // (de)serialization object
     private Gson gson;
+
+    // consumers and producers
+    private Consumer clientConsumer;
+    private Consumer bankConsumer;
+    private Producer clientProducer;
+    private Producer bankProducer;
 
     // javafx objects
     public ListView<ClientListViewLine> lvBroker;
 
     public BrokerClientController() {
 
-        try {
-            // intialize Gson, consumer, producers
-            this.gson = new Gson();
-            this.clientProducer = initClientProducer();
-            this.bankProducer = initBankProducer();
-            this.brokerClientConsumer = initBrokerClientConsumer();
-            this.brokerBankConsumer = initBrokerBankConsumer();
+        // intialize Gson, consumer, producers
+        this.gson = new Gson();
+        this.clientProducer = new Producer(JMS_CLIENT_QUEUE_NAME);
+        this.bankProducer = new Producer(JMS_BANK_QUEUE_NAME);
+        this.clientConsumer = new Consumer(JMS_CLIENT_INBOX_QUEUE_NAME);
+        this.bankConsumer = new Consumer(JMS_BANK_INBOX_QUEUE_NAME);
 
-            // set consumer event listeners
-            this.brokerClientConsumer.setMessageListener(message -> {
+        // set consumer event listeners
+        this.clientConsumer.setMessageListener(message -> {
 
-                ClientListViewLine lvl = deserializeClientListViewLine(message);
-                ClientListViewLine localLvl = getRequestReply(lvl.getLoanRequest());
-                handleClientMessage(lvl);
-            });
+            ClientListViewLine lvl = deserializeClientListViewLine(message);
+            ClientListViewLine localLvl = getRequestReply(lvl.getLoanRequest());
+            handleClientMessage(lvl);
+        });
 
-            this.brokerBankConsumer.setMessageListener(message -> {
+        this.bankConsumer.setMessageListener(message -> {
 
-                try {
-                    BankListViewLine blvl = deserializeBankListViewLine(message);
-                    BankInterestRequest bReq = blvl.getBankInterestRequest();
-                    BankInterestReply bRep = blvl.getBankInterestReply();
+            try {
+                BankListViewLine blvl = deserializeBankListViewLine(message);
+                BankInterestRequest bReq = blvl.getBankInterestRequest();
+                BankInterestReply bRep = blvl.getBankInterestReply();
 
-                    LoanRequest ln = new LoanRequest(Integer.parseInt(message.getJMSCorrelationID()),
-                            bReq.getAmount(), bReq.getTime());
-                    LoanReply lr = new LoanReply(bRep.getInterest(), bRep.getQuoteId());
-                    ClientListViewLine lvl = new ClientListViewLine(ln);
-                    lvl.setLoanReply(lr);
-                    handleBankMessage(lvl);
-                } catch (JMSException e) {
-                    e.printStackTrace();
-                }
-            });
-
-            //start connections
-            this.brokerBankConnection.start();
-            this.brokerClientConnection.start();
-        } catch (JMSException e) {
-            e.printStackTrace();
-        }
+                LoanRequest ln = new LoanRequest(Integer.parseInt(message.getJMSCorrelationID()),
+                        bReq.getAmount(), bReq.getTime());
+                LoanReply lr = new LoanReply(bRep.getInterest(), bRep.getQuoteId());
+                ClientListViewLine lvl = new ClientListViewLine(ln);
+                lvl.setLoanReply(lr);
+                handleBankMessage(lvl);
+            } catch (JMSException e) {
+                e.printStackTrace();
+            }
+        });
     }
 
     public ClientListViewLine deserializeClientListViewLine(Message message) {
@@ -135,116 +110,11 @@ public class BrokerClientController {
         });
     }
 
-    private MessageProducer initClientProducer() {
-
-        try {
-            // set properties
-            Properties props = new Properties();
-            props.setProperty(Context.INITIAL_CONTEXT_FACTORY,
-                    "org.apache.activemq.jndi.ActiveMQInitialContextFactory");
-            props.setProperty(Context.PROVIDER_URL, JMS_CONNECTION);
-            props.put(("queue." + JMS_CLIENT_QUEUE_NAME), JMS_CLIENT_QUEUE_NAME);
-
-            // create connection and session
-            Context jndiContext = new InitialContext(props);
-            ConnectionFactory connectionFactory = (ConnectionFactory) jndiContext
-                    .lookup("ConnectionFactory");
-            this.clientConnection = connectionFactory.createConnection();
-            this.clientSession = clientConnection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-
-            // create clientDestination and consumer
-            this.clientDestination = (Destination) jndiContext.lookup(JMS_CLIENT_QUEUE_NAME);
-            return clientSession.createProducer(this.clientDestination);
-        } catch (JMSException | NamingException e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
-
-    private MessageProducer initBankProducer() {
-
-        try {
-            // set properties
-            Properties props = new Properties();
-            props.setProperty(Context.INITIAL_CONTEXT_FACTORY,
-                    "org.apache.activemq.jndi.ActiveMQInitialContextFactory");
-            props.setProperty(Context.PROVIDER_URL, JMS_CONNECTION);
-            props.put(("queue." + JMS_BANK_QUEUE_NAME), JMS_BANK_QUEUE_NAME);
-
-            // create connection and session
-            Context jndiContext = new InitialContext(props);
-            ConnectionFactory connectionFactory = (ConnectionFactory) jndiContext
-                    .lookup("ConnectionFactory");
-            this.bankConnection = connectionFactory.createConnection();
-            this.bankSession = bankConnection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-
-            // create bankDestination and consumer
-            this.bankDestination = (Destination) jndiContext.lookup(JMS_BANK_QUEUE_NAME);
-            return bankSession.createProducer(this.bankDestination);
-        } catch (JMSException | NamingException e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
-
-    private MessageConsumer initBrokerClientConsumer() {
-
-        try {
-            // set properties
-            Properties props = new Properties();
-            props.setProperty(Context.INITIAL_CONTEXT_FACTORY,
-                    "org.apache.activemq.jndi.ActiveMQInitialContextFactory");
-            props.setProperty(Context.PROVIDER_URL, JMS_CONNECTION);
-            props.put(("queue." + JMS_CLIENT_INBOX_QUEUE_NAME), JMS_CLIENT_INBOX_QUEUE_NAME);
-
-            // create connection and session
-            Context jndiContext = new InitialContext(props);
-            ConnectionFactory connectionFactory = (ConnectionFactory) jndiContext
-                    .lookup("ConnectionFactory");
-            this.brokerClientConnection = connectionFactory.createConnection();
-            this.brokerClientSession = brokerClientConnection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-
-            // create brokerDestination and producer
-            this.brokerClientDestination = (Destination) jndiContext.lookup(JMS_CLIENT_INBOX_QUEUE_NAME);
-            return brokerClientSession.createConsumer(this.brokerClientDestination);
-        } catch (JMSException | NamingException e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
-
-    private MessageConsumer initBrokerBankConsumer() {
-
-        try {
-            // set properties
-            Properties props = new Properties();
-            props.setProperty(Context.INITIAL_CONTEXT_FACTORY,
-                    "org.apache.activemq.jndi.ActiveMQInitialContextFactory");
-            props.setProperty(Context.PROVIDER_URL, JMS_CONNECTION);
-            props.put(("queue." + JMS_BANK_INBOX_QUEUE_NAME), JMS_BANK_INBOX_QUEUE_NAME);
-
-            // create connection and session
-            Context jndiContext = new InitialContext(props);
-            ConnectionFactory connectionFactory = (ConnectionFactory) jndiContext
-                    .lookup("ConnectionFactory");
-            this.brokerBankConnection = connectionFactory.createConnection();
-            this.brokerBankSession = brokerBankConnection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-
-            // create brokerDestination and producer
-            this.brokerBankDestination = (Destination) jndiContext.lookup(JMS_BANK_INBOX_QUEUE_NAME);
-            return brokerBankSession.createConsumer(this.brokerBankDestination);
-        } catch (JMSException | NamingException e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
-
     private void handleBankMessage(ClientListViewLine lvl) {
 
         try {
             addListViewLineToLv(lvl);
-            Message msg = this.clientSession.createTextMessage(this.gson.toJson(lvl));
-            this.clientProducer.send(msg);
+            this.clientProducer.send(lvl);
         } catch (JMSException e) {
             e.printStackTrace();
         }
@@ -257,9 +127,8 @@ public class BrokerClientController {
             LoanRequest lr = lvl.getLoanRequest();
             BankInterestRequest bReq = new BankInterestRequest(lr.getAmount(), lr.getTime());
             BankListViewLine blvl = new BankListViewLine(bReq);
-            Message msg = this.bankSession.createTextMessage(this.gson.toJson(blvl));
-            msg.setJMSCorrelationID(Integer.toString(lvl.getLoanRequest().getSsn()));
-            this.bankProducer.send(msg);
+            String ssn = Integer.toString(lvl.getLoanRequest().getSsn());
+            this.bankProducer.send(blvl, ssn);
         } catch (JMSException e) {
             e.printStackTrace();
         }

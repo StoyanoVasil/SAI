@@ -7,7 +7,7 @@ import brokerclient.model.BankInterestReply;
 /**
  * This class is an item/line for a ListView. It makes it possible to put both BankInterestRequest and BankInterestReply object in one item in a ListView.
  */
-class BankListViewLine {
+public class BankListViewLine {
 	
 	private BankInterestRequest bankInterestRequest;
 	private BankInterestReply bankInterestReply;

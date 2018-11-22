@@ -47,13 +47,10 @@ public class LoanClientController implements Initializable {
         this.consumer = new Consumer(JMS_CLIENT_QUEUE_NAME);
 
         // set event listener
-        this.consumer.setMessageListener(new MessageListener() {
-            @Override
-            public void onMessage(Message message) {
-                ListViewLine lvl = deserializeListViewLine(message);
-                if(lvl == null) return;
-                addMessageToLv(lvl);
-            }
+        this.consumer.setMessageListener(message -> {
+            ListViewLine lvl = deserializeListViewLine(message);
+            if(lvl == null) return;
+            addMessageToLv(lvl);
         });
     }
 
