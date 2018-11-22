@@ -1,5 +1,7 @@
 package bank.gui;
 
+import bank.messageGateway.Consumer;
+import bank.messageGateway.Producer;
 import bank.model.BankInterestReply;
 import com.google.gson.Gson;
 import javafx.application.Platform;
@@ -22,21 +24,8 @@ public class BankController implements Initializable {
 
     // connection details and queue names
     private final String BANK_ID = "ABN";
-    private static final String JMS_CONNECTION = "tcp://localhost:61616";
     private static final String JMS_BANK_QUEUE_NAME = "abn-bank";
     private static final String JMS_BROKER_QUEUE_NAME = "broker-bank";
-
-    // bank connection objects
-    private Connection bankConnection;
-    private Session bankSession;
-    private Destination bankDestination;
-    private MessageConsumer bankConsumer;
-
-    // broker connection objects
-    private Connection brokerConnection;
-    private Session brokerSession;
-    private Destination brokerDestination;
-    private MessageProducer brokerProducer;
 
     // (de)serialization object
     private Gson gson;
@@ -46,44 +35,39 @@ public class BankController implements Initializable {
     public TextField tfInterest;
 
     // Map to store ssn
-    public Map<ListViewLine, String> lvlToSsn;
+    private Map<ListViewLine, String> lvlToSsn;
+
+    // consumer and producer
+    private Consumer consumer;
+    private Producer producer;
 
     public BankController() {
 
-        try {
-            // initialize Gson, consumer, producer
-            this.gson = new Gson();
-            this.bankConsumer = initMessageConsumer();
-            this.brokerProducer = initMessageProducer();
+        // initialize objects
+        this.gson = new Gson();
+        this.producer = new Producer(JMS_BROKER_QUEUE_NAME);
+        this.consumer = new Consumer(JMS_BANK_QUEUE_NAME);
+        this.lvlToSsn = new HashMap<>();
 
-            // initialize map
-            lvlToSsn = new HashMap<>();
-
-            if (this.bankConsumer == null || this.brokerProducer == null) return;
-
-            // set event listener
-            this.bankConsumer.setMessageListener(message -> {
-
+        // set event listener
+        this.consumer.setMessageListener(new MessageListener() {
+            @Override
+            public void onMessage(Message message) {
                 try {
                     // get ListViewLine from message and deserialize from JSON
                     ListViewLine lvl = deserializeListViewLine(message);
                     if (lvl == null) return;
 
                     // add to map
-                    this.lvlToSsn.put(lvl, message.getJMSCorrelationID());
+                    lvlToSsn.put(lvl, message.getJMSCorrelationID());
 
                     // add ListViewLine to the listview
                     addMessageToLv(lvl);
                 } catch (JMSException e) {
                     e.printStackTrace();
                 }
-            });
-
-            // start connneciton
-            this.bankConnection.start();
-        } catch (JMSException e) {
-            e.printStackTrace();
-        }
+            }
+        });
     }
 
     @FXML
@@ -97,9 +81,7 @@ public class BankController implements Initializable {
             lvl.setBankInterestReply(new BankInterestReply(interest, BANK_ID));
 
             // send back reply
-            Message msg = this.brokerSession.createTextMessage(this.gson.toJson(lvl));
-            msg.setJMSCorrelationID(ssn);
-            this.brokerProducer.send(msg);
+            this.producer.send(lvl, ssn);
         } catch (JMSException e) {
             e.printStackTrace();
         }
@@ -126,57 +108,5 @@ public class BankController implements Initializable {
         Platform.runLater(() -> {
             lvBankRequestReply.getItems().add(lvl);
         });
-    }
-
-    private MessageConsumer initMessageConsumer() {
-
-        try {
-            // set properties
-            Properties props = new Properties();
-            props.setProperty(Context.INITIAL_CONTEXT_FACTORY,
-                    "org.apache.activemq.jndi.ActiveMQInitialContextFactory");
-            props.setProperty(Context.PROVIDER_URL, JMS_CONNECTION);
-            props.put(("queue." + JMS_BANK_QUEUE_NAME), JMS_BANK_QUEUE_NAME);
-
-            // create connection and session
-            Context jndiContext = new InitialContext(props);
-            ConnectionFactory connectionFactory = (ConnectionFactory) jndiContext
-                    .lookup("ConnectionFactory");
-            this.bankConnection = connectionFactory.createConnection();
-            this.bankSession = bankConnection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-
-            // create bankDestination and consumer
-            this.bankDestination = (Destination) jndiContext.lookup(JMS_BANK_QUEUE_NAME);
-            return bankSession.createConsumer(this.bankDestination);
-        } catch (JMSException | NamingException e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
-
-    private MessageProducer initMessageProducer() {
-
-        try {
-            // set properties
-            Properties props = new Properties();
-            props.setProperty(Context.INITIAL_CONTEXT_FACTORY,
-                    "org.apache.activemq.jndi.ActiveMQInitialContextFactory");
-            props.setProperty(Context.PROVIDER_URL, JMS_CONNECTION);
-            props.put(("queue." + JMS_BROKER_QUEUE_NAME), JMS_BROKER_QUEUE_NAME);
-
-            // create connection and session
-            Context jndiContext = new InitialContext(props);
-            ConnectionFactory connectionFactory = (ConnectionFactory) jndiContext
-                    .lookup("ConnectionFactory");
-            this.brokerConnection = connectionFactory.createConnection();
-            this.brokerSession = brokerConnection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-
-            // create brokerDestination and producer
-            this.brokerDestination = (Destination) jndiContext.lookup(JMS_BROKER_QUEUE_NAME);
-            return brokerSession.createProducer(this.brokerDestination);
-        } catch (JMSException | NamingException e) {
-            e.printStackTrace();
-            return null;
-        }
     }
 }
