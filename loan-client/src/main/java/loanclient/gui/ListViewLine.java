@@ -5,7 +5,7 @@ import loanclient.model.*;
 /**
  * This class is an item/line for a ListView. It makes it possible to put both BankInterestRequest and BankInterestReply object in one item in a ListView.
  */
-class ListViewLine {
+public class ListViewLine {
 	
 	private LoanRequest loanRequest;
 	private LoanReply loanReply;
