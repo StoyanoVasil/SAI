@@ -1,0 +1,2035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="95af7865-671e-4c40-81bb-0ad261159111" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/bank/.gradle/" />
+    <ignored path="$PROJECT_DIR$/bank/build/" />
+    <ignored path="$PROJECT_DIR$/bank/out/" />
+    <ignored path="$PROJECT_DIR$/loan-client/.gradle/" />
+    <ignored path="$PROJECT_DIR$/loan-client/build/" />
+    <ignored path="$PROJECT_DIR$/loan-client/out/" />
+    <ignored path="$PROJECT_DIR$/loan-broker/.gradle/" />
+    <ignored path="$PROJECT_DIR$/loan-broker/build/" />
+    <ignored path="$PROJECT_DIR$/loan-broker/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/bank">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/loan-broker">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/loan-client">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/loan-client">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/bank">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/loan-broker">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="loan-broker" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="loan-broker" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="loan-broker" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="787760429">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gradle" value="2" />
+          <entry key="java" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Groovy" value="2" />
+          <entry key="JAVA" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="gradle" value="27" />
+          <entry key="java" value="99" />
+          <entry key="txt" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Groovy" value="27" />
+          <entry key="JAVA" value="99" />
+          <entry key="PLAIN_TEXT" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+    </session>
+    <session id="801709661">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="56" />
+          <entry key="fxml" value="26" />
+          <entry key="gradle" value="18" />
+          <entry key="java" value="4009" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Groovy" value="18" />
+          <entry key="JAVA" value="4009" />
+          <entry key="PLAIN_TEXT" value="56" />
+          <entry key="XML" value="26" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="fxml" value="5" />
+          <entry key="gradle" value="19" />
+          <entry key="java" value="67" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Groovy" value="19" />
+          <entry key="JAVA" value="67" />
+          <entry key="XML" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loan-client/src/main/java/loanclient/gui/LoanClientController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="23" column="57" lean-forward="true" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="68" />
+              <folding>
+                <element signature="method#initialize#0;class#LoanClientController#0" />
+                <element signature="method#deserializeListViewLine#0;class#LoanClientController#0" />
+                <element signature="method#addMessageToLv#0;class#LoanClientController#0" />
+                <element signature="method#initMessageConsumer#0;class#LoanClientController#0" />
+                <element signature="method#initMessageProducer#0;class#LoanClientController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/gui/BrokerClientController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-40">
+              <caret line="159" column="24" lean-forward="true" selection-start-line="159" selection-start-column="24" selection-end-line="159" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#deserializeClientListViewLine#0;class#BrokerClientController#0" />
+                <element signature="method#deserializeClientListViewLine#1;class#BrokerClientController#0" />
+                <element signature="method#addListViewLineToLv#0;class#BrokerClientController#0" />
+                <element signature="method#initBrokerConsumer#0;class#BrokerClientController#0" />
+                <element signature="method#initBrokerClientConsumer#1;class#BrokerClientController#0" />
+                <element signature="method#handleBankMessage#0;class#BrokerClientController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bank/src/main/java/bank/gui/BankController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="499">
+              <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#initialize#0;class#BankController#0" />
+                <element signature="method#deserializeListViewLine#0;class#BankController#0" />
+                <element signature="method#initMessageConsumer#0;class#BankController#0" />
+                <element signature="method#initMessageProducer#0;class#BankController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bank/src/main/java/bank/model/BankInterestRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ClientListLineView</find>
+    </findStrings>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="myGradleHomes">
+      <map>
+        <entry key="$PROJECT_DIR$/bank" value="C:\Users\Vasil\.gradle\wrapper\dists\gradle-4.8-all\41c9mvq2w0645xx6nsenaerjl\gradle-4.8" />
+        <entry key="$PROJECT_DIR$/loan-broker" value="C:\Users\Vasil\.gradle\wrapper\dists\gradle-4.8-bin\divx0s2uj4thofgytb7gf9fsi\gradle-4.8" />
+        <entry key="$PROJECT_DIR$/loan-client" value="C:\Users\Vasil\.gradle\wrapper\dists\gradle-4.8-all\41c9mvq2w0645xx6nsenaerjl\gradle-4.8" />
+      </map>
+    </option>
+    <option name="myGradleVersions">
+      <map>
+        <entry key="$PROJECT_DIR$/bank" value="4.8" />
+        <entry key="$PROJECT_DIR$/loan-broker" value="4.8" />
+        <entry key="$PROJECT_DIR$/loan-client" value="4.8" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="bank" />
+              <option name="path" value="$PROJECT_DIR$/bank" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="bank" />
+                <option name="path" value="$PROJECT_DIR$/bank" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="loan-broker" />
+              <option name="path" value="$PROJECT_DIR$/loan-broker" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="loan-broker" />
+                <option name="path" value="$PROJECT_DIR$/loan-broker" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="loan-client" />
+              <option name="path" value="$PROJECT_DIR$/loan-client" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="loan-client" />
+                <option name="path" value="$PROJECT_DIR$/loan-client" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$/bank">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'bank'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'bank'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'bank'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'bank'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'bank'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'bank'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'bank'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'bank'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'bank'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/bank" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/loan-broker">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'loan-broker'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'loan-broker'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'loan-broker'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'loan-broker'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'loan-broker'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'loan-broker'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'loan-broker'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'loan-broker'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'loan-broker'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/loan-client">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'loan-client'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'loan-client'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'loan-client'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'loan-client'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'loan-client'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'loan-client'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'loan-client'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'loan-client'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'loan-client'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/loan-client" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/bank" value="6169193347419" />
+        <entry key="$PROJECT_DIR$/bank/.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/bank/build.gradle" value="3416307558" />
+        <entry key="$PROJECT_DIR$/bank/gradle/wrapper/gradle-wrapper.properties" value="2585518924" />
+        <entry key="$PROJECT_DIR$/bank/settings.gradle" value="2458325178" />
+        <entry key="$PROJECT_DIR$/broker" value="0" />
+        <entry key="$PROJECT_DIR$/loan-broker" value="6169437544962" />
+        <entry key="$PROJECT_DIR$/loan-broker/.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/loan-broker/build.gradle" value="2594014794" />
+        <entry key="$PROJECT_DIR$/loan-broker/gradle/wrapper/gradle-wrapper.properties" value="2007532874" />
+        <entry key="$PROJECT_DIR$/loan-broker/settings.gradle" value="3300046072" />
+        <entry key="$PROJECT_DIR$/loan-client" value="6169193355288" />
+        <entry key="$PROJECT_DIR$/loan-client/.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/loan-client/build.gradle" value="4122751493" />
+        <entry key="$PROJECT_DIR$/loan-client/gradle/wrapper/gradle-wrapper.properties" value="2585518924" />
+        <entry key="$PROJECT_DIR$/loan-client/settings.gradle" value="1854477907" />
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$/bank">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$/bank">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/bank" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="bank" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/announce" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/antlr" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/base-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/base-services-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/build-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/build-cache-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/build-comparison" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/build-option" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/cli" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/code-quality" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/composite-builds" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/core-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/dependency-management" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/diagnostics" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/ide" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/ide-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/ide-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/installation-beacon" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/internal-android-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/internal-integ-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/internal-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/internal-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/ivy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/jacoco" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/javascript" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/jvm-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/language-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/language-java" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/language-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/language-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/language-scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/launcher" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/logging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/maven" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/messaging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/model-core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/model-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/persistent-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/platform-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/platform-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/platform-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/platform-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/plugin-development" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/plugin-use" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/plugins" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/process-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/publish" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/reporting" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/resources" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/resources-gcs" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/resources-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/resources-s3" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/resources-sftp" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/signing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/test-kit" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/testing-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/testing-junit-platform" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/testing-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/testing-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/tooling-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/tooling-api-builders" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/version-control" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/workers" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/wrapper" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/ant-1.9.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/ant-launcher-1.9.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-base-services-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-base-services-groovy-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-build-cache-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-build-option-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-cli-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-core-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-core-api-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-docs-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-installation-beacon-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-jvm-services-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-kotlin-dsl-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-kotlin-dsl-provider-plugins-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-kotlin-dsl-provider-spi-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-kotlin-dsl-tooling-builders-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-kotlin-dsl-tooling-models-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-launcher-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-logging-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-messaging-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-model-core-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-model-groovy-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-native-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-persistent-cache-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-process-services-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-resources-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-runtime-api-info-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-tooling-api-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-wrapper-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/groovy-all-2.4.12.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-announce-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-antlr-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-build-cache-http-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-build-comparison-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-build-init-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-code-quality-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-composite-builds-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-dependency-management-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-diagnostics-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-ear-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-ide-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-ide-native-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-ide-play-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-ivy-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-jacoco-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-javascript-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-language-groovy-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-language-java-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-language-jvm-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-language-native-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-language-scala-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-maven-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-osgi-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-platform-base-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-platform-jvm-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-platform-native-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-platform-play-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-plugin-development-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-plugin-use-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-plugins-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-publish-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-reporting-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-resources-gcs-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-resources-http-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-resources-s3-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-resources-sftp-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-scala-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-signing-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-test-kit-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-testing-base-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-testing-junit-platform-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-testing-jvm-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-testing-native-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-tooling-api-builders-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-version-control-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-workers-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/ivy-2.2.0.jar" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/loan-broker">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$/loan-broker">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/loan-broker" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="loan-broker" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/ant-1.9.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/ant-launcher-1.9.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-base-services-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-base-services-groovy-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-build-cache-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-build-option-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-cli-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-core-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-core-api-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-docs-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-installation-beacon-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-jvm-services-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-kotlin-dsl-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-kotlin-dsl-provider-plugins-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-kotlin-dsl-provider-spi-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-kotlin-dsl-tooling-builders-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-kotlin-dsl-tooling-models-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-launcher-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-logging-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-messaging-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-model-core-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-model-groovy-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-native-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-persistent-cache-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-process-services-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-resources-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-runtime-api-info-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-tooling-api-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/gradle-wrapper-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/groovy-all-2.4.12.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-announce-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-antlr-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-build-cache-http-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-build-comparison-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-build-init-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-code-quality-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-composite-builds-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-dependency-management-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-diagnostics-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-ear-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-ide-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-ide-native-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-ide-play-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-ivy-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-jacoco-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-javascript-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-language-groovy-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-language-java-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-language-jvm-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-language-native-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-language-scala-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-maven-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-osgi-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-platform-base-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-platform-jvm-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-platform-native-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-platform-play-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-plugin-development-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-plugin-use-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-plugins-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-publish-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-reporting-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-resources-gcs-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-resources-http-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-resources-s3-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-resources-sftp-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-scala-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-signing-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-test-kit-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-testing-base-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-testing-junit-platform-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-testing-jvm-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-testing-native-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-tooling-api-builders-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-version-control-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/gradle-workers-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-bin/divx0s2uj4thofgytb7gf9fsi/gradle-4.8/lib/plugins/ivy-2.2.0.jar" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/loan-client">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$/loan-client">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/loan-client" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="loan-client" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/announce" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/antlr" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/base-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/base-services-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/build-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/build-cache-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/build-comparison" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/build-option" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/cli" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/code-quality" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/composite-builds" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/core-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/dependency-management" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/diagnostics" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/ide" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/ide-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/ide-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/installation-beacon" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/internal-android-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/internal-integ-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/internal-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/internal-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/ivy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/jacoco" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/javascript" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/jvm-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/language-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/language-java" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/language-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/language-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/language-scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/launcher" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/logging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/maven" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/messaging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/model-core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/model-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/persistent-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/platform-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/platform-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/platform-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/platform-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/plugin-development" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/plugin-use" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/plugins" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/process-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/publish" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/reporting" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/resources" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/resources-gcs" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/resources-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/resources-s3" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/resources-sftp" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/signing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/test-kit" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/testing-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/testing-junit-platform" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/testing-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/testing-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/tooling-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/tooling-api-builders" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/version-control" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/workers" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/wrapper" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/ant-1.9.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/ant-launcher-1.9.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-base-services-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-base-services-groovy-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-build-cache-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-build-option-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-cli-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-core-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-core-api-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-docs-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-installation-beacon-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-jvm-services-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-kotlin-dsl-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-kotlin-dsl-provider-plugins-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-kotlin-dsl-provider-spi-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-kotlin-dsl-tooling-builders-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-kotlin-dsl-tooling-models-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-launcher-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-logging-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-messaging-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-model-core-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-model-groovy-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-native-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-persistent-cache-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-process-services-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-resources-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-runtime-api-info-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-tooling-api-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/gradle-wrapper-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/groovy-all-2.4.12.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-announce-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-antlr-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-build-cache-http-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-build-comparison-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-build-init-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-code-quality-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-composite-builds-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-dependency-management-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-diagnostics-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-ear-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-ide-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-ide-native-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-ide-play-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-ivy-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-jacoco-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-javascript-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-language-groovy-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-language-java-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-language-jvm-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-language-native-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-language-scala-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-maven-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-osgi-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-platform-base-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-platform-jvm-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-platform-native-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-platform-play-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-plugin-development-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-plugin-use-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-plugins-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-publish-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-reporting-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-resources-gcs-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-resources-http-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-resources-s3-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-resources-sftp-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-scala-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-signing-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-test-kit-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-testing-base-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-testing-junit-platform-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-testing-jvm-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-testing-native-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-tooling-api-builders-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-version-control-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/gradle-workers-4.8.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/lib/plugins/ivy-2.2.0.jar" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/bank" value="RE_IMPORT" />
+        <entry key="$PROJECT_DIR$/broker" value="RE_IMPORT" />
+        <entry key="$PROJECT_DIR$/loan-broker" value="RE_IMPORT" />
+        <entry key="$PROJECT_DIR$/loan-client" value="RE_IMPORT" />
+        <entry key="$PROJECT_DIR$/../sai-loan-broker" value="PREVIEW" />
+        <entry key="C:/temp/jms/korbackajurajj_8088_732661_messaging-1/messaging" value="PREVIEW" />
+        <entry key="C:/temp/jms/marinétenaaleixa_16282_732655_service-rental" value="PREVIEW" />
+        <entry key="C:/temp/jms/maseunghyeons_15547_732301_[S_Ma]JMS_Requestor/JMS_Requestor" value="PREVIEW" />
+        <entry key="C:/temp/jms/maseunghyeons_15547_732302_[S_Ma]JMS_Replier/JMS_Replier" value="PREVIEW" />
+        <entry key="C:/temp/rest/rest/genovteodortg_9058_718276_SOT_Teodor_Genov_359145/SOT_Teodor_Genov_359145/SOT-Teodor_Genov-Assignment/client" value="PREVIEW" />
+        <entry key="C:/temp/rest/rest/genovteodortg_9058_718276_SOT_Teodor_Genov_359145/SOT_Teodor_Genov_359145/SOT-Teodor_Genov-Assignment/service" value="PREVIEW" />
+        <entry key="C:/temp/rest/rest/korbackajurajj_8088_718370_SOT_2893940_Juraj_Korbacka_REST/SOT_2893940_Juraj_Korbacka_REST/sot-client" value="PREVIEW" />
+        <entry key="C:/temp/rest/rest/maseunghyeons_15547_718546_Service_Gradle-1/Service_Gradle" value="PREVIEW" />
+        <entry key="C:/temp/rest/rest/maseunghyeons_15547_718547_Client_Gradle-1/Client_Gradle" value="PREVIEW" />
+        <entry key="C:/temp/rest/rest/qasimmohamedabdullaalimakialbaqaliqasimq_7418_718461_Student Housing/StudentHousing" value="PREVIEW" />
+        <entry key="C:/temp/rest/rest/slavchevveselinvr_7464_717622_SoT-VeselinSlavchev/SoT-VeselinSlavchev/SoT-client" value="PREVIEW" />
+        <entry key="C:/temp/rest/rest/vesnonokaannaa_5382_717261_RoomRental-1/RoomRental/Service" value="PREVIEW" />
+        <entry key="C:/temp/rest/rest/vesnonokaannaa_5382_717261_RoomRental-1/RoomRental/StudentClient" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/loan-client/src/main/java/loanclient/gui/LoanClientController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/gui/BrokerClientMain.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/gui/BrokerClientController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/bank/src/main/java/bank/gui/BankController.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/bank/src/main/java/bank/gui/BankMain.java" />
+        <option value="$PROJECT_DIR$/loan-client/src/main/java/loanclient/gui/LoanClientMain.java" />
+        <option value="$PROJECT_DIR$/broker/build.gradle" />
+        <option value="$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/gui/gui/ListViewLine.java" />
+        <option value="$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/gui/LoanClientMain.java" />
+        <option value="$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/model/LoanRequest.java" />
+        <option value="$PROJECT_DIR$/bank/build.gradle" />
+        <option value="$PROJECT_DIR$/loan-client/build.gradle" />
+        <option value="$PROJECT_DIR$/loan-broker/build.gradle" />
+        <option value="$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/gui/BrokerClientMain.java" />
+        <option value="$PROJECT_DIR$/loan-broker/src/main/resources/brokerclient.fxml" />
+        <option value="$PROJECT_DIR$/bank/src/main/resources/bank.fxml" />
+        <option value="$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/model/BankInterestRequest.java" />
+        <option value="$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/gui/LoanLine.java" />
+        <option value="$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/gui/BankLine.java" />
+        <option value="$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/model/BankInterestReply.java" />
+        <option value="$PROJECT_DIR$/loan-client/src/main/java/loanclient/model/LoanRequest.java" />
+        <option value="$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/model/LoanReply.java" />
+        <option value="$PROJECT_DIR$/bank/src/main/java/bank/model/LoanReply.java" />
+        <option value="$PROJECT_DIR$/bank/src/main/java/bank/model/LoanRequest.java" />
+        <option value="$PROJECT_DIR$/loan-client/src/main/java/loanclient/gui/ListViewLine.java" />
+        <option value="$PROJECT_DIR$/loan-client/src/main/java/loanclient/gui/LoanClientController.java" />
+        <option value="$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/model/ClientMessageHandler.java" />
+        <option value="$PROJECT_DIR$/bank/src/main/java/bank/gui/BankListLineView.java" />
+        <option value="$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/gui/ListViewLine.java" />
+        <option value="$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/gui/BankListViewLine.java" />
+        <option value="$PROJECT_DIR$/bank/src/main/java/bank/gui/ListViewLine.java" />
+        <option value="$PROJECT_DIR$/bank/src/main/java/bank/model/BankInterestRequest.java" />
+        <option value="$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/gui/BrokerClientController.java" />
+        <option value="$PROJECT_DIR$/bank/src/main/java/bank/gui/BankController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="360" />
+    <option name="y" value="505" />
+    <option name="width" value="1385" />
+    <option name="height" value="755" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Angular</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bank" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bank" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bank" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bank" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loan-broker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loan-broker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loan-broker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loan-broker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loan-broker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="brokerclient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loan-broker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="brokerclient" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loan-broker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="brokerclient" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loan-client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loan-client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loan-client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loan-client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loan-client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="loanclient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loan-client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="loanclient" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loan-broker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loan-client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="loanclient" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542278420827" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17285156" />
+    <property name="project.structure.side.proportion" value="0.27981108" />
+    <property name="settings.editor.selected.configurable" value="project.validation" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vasil\Documents\School\Fontys\SAI\loan-broker\bank\src\main\java\bank\model" />
+      <recent name="C:\Users\Vasil\Documents\School\Fontys\SAI\loan-broker\loan-client\src\main\java\loanclient\model" />
+      <recent name="C:\Users\Vasil\Documents\School\Fontys\SAI\loan-broker\loan-broker\src\main\java\brokerclient\model" />
+      <recent name="C:\Users\Vasil\Documents\School\Fontys\SAI\loan-broker\loan-broker\src\main\resources" />
+      <recent name="C:\Users\Vasil\Documents\School\Fontys\SAI\loan-broker\loan-broker\src\main\java\brokerclient\gui" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="brokerclient.gui" />
+      <recent name="loanclient.gui" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\myDocuments\OneDrive - Office 365 Fontys\vakken\SAI\code\sai_practical_startup\loan-broker\loan-client\src\main\resources" />
+      <recent name="C:\myDocuments\OneDrive - Office 365 Fontys\vakken\SAI\code\sai_practical_startup\loan-broker\bank\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Multirun.loan-client &amp; bank &amp; broker">
+    <configuration name="bank" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="bank.gui.BankMain" />
+      <module name="bank_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bank.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="broker" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="brokerclient.gui.BrokerClientMain" />
+      <module name="loan-broker_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="brokerclient.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="loan-client" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="loanclient.gui.LoanClientMain" />
+      <module name="loan-client_main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bank [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/bank" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="loan-broker [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="loan-broker [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/loan-broker" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="loan-client [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/loan-client" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="bank.jar" type="JarApplication" factoryName="JAR Application">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/bank/build/libs/bank.jar" />
+      <option name="WORKING_DIRECTORY" value="C:\myDocuments\OneDrive - Office 365 Fontys\vakken\SAI\code\sai_practical_startup\loan-broker" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Gradle.BeforeRunTask" enabled="true" tasks="jar" externalProjectPath="$PROJECT_DIR$/bank" vmOptions="" scriptParameters="" />
+      </method>
+    </configuration>
+    <configuration name="loan-client.jar" type="JarApplication" factoryName="JAR Application">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/loan-client/build/libs/loan-client.jar" />
+      <option name="WORKING_DIRECTORY" value="C:\myDocuments\OneDrive - Office 365 Fontys\vakken\SAI\code\sai_practical_startup\loan-broker" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Gradle.BeforeRunTask" enabled="true" tasks="jar" externalProjectPath="$PROJECT_DIR$/loan-client" vmOptions="" scriptParameters="" />
+      </method>
+    </configuration>
+    <configuration name="executables" type="Multirun" factoryName="Multirun" separateTabs="true" startOneByOne="true" markFailedProcess="true" hideSuccessProcess="false" delayTime="0">
+      <runConfiguration name="loan-client.jar" type="JAR Application" />
+      <runConfiguration name="bank.jar" type="JAR Application" />
+      <method v="2" />
+    </configuration>
+    <configuration name="loan-client &amp; bank &amp; broker" type="Multirun" factoryName="Multirun" separateTabs="true" startOneByOne="true" markFailedProcess="true" hideSuccessProcess="false" delayTime="0">
+      <runConfiguration name="loan-client" type="Application" />
+      <runConfiguration name="bank" type="Application" />
+      <runConfiguration name="broker" type="Application" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.loan-client" />
+      <item itemvalue="Application.bank" />
+      <item itemvalue="Application.broker" />
+      <item itemvalue="JAR Application.loan-client.jar" />
+      <item itemvalue="JAR Application.bank.jar" />
+      <item itemvalue="Multirun.executables" />
+      <item itemvalue="Multirun.loan-client &amp; bank &amp; broker" />
+      <item itemvalue="Gradle.bank [build]" />
+      <item itemvalue="Gradle.loan-client [build]" />
+      <item itemvalue="Gradle.loan-broker [build]" />
+      <item itemvalue="Gradle.loan-broker [dependencies]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.loan-broker [dependencies]" />
+        <item itemvalue="Gradle.loan-broker [build]" />
+        <item itemvalue="Gradle.loan-client [build]" />
+        <item itemvalue="Gradle.bank [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="95af7865-671e-4c40-81bb-0ad261159111" name="Default Changelist" comment="" />
+      <created>1542277058525</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542277058525</updated>
+      <workItem from="1542277060244" duration="1359000" />
+      <workItem from="1542278493410" duration="120000" />
+      <workItem from="1542356305410" duration="4119000" />
+      <workItem from="1542361621864" duration="19070000" />
+      <workItem from="1542576472592" duration="18000" />
+      <workItem from="1542696064202" duration="3844000" />
+      <workItem from="1542904185243" duration="7356000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="35886000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22080536" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2536913" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32885906" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32885906" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32885906" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.3295302" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bank/src/main/java/bank/gui/BankController.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bank/src/main/java/bank/gui/BankMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan-client/src/main/java/loanclient/gui/LoanClientMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/broker/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/broker/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan-broker/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan-client/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bank/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/gui/BrokerClientMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan-broker/src/main/resources/brokerclient.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bank/src/main/resources/bank.fxml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/model/BankInterestRequest.java" />
+    <entry file="file://$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/gui/BankLine.java" />
+    <entry file="file://$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/gui/LoanLine.java" />
+    <entry file="file://$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/model/BankInterestReply.java" />
+    <entry file="file://$PROJECT_DIR$/bank/src/main/java/bank/model/BankInterestReply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan-client/src/main/java/loanclient/gui/ListViewLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.controls/javafx/scene/control/ListView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="412" selection-start-line="412" selection-end-line="412" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan-client/src/main/java/loanclient/gui/LoanClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="23" column="57" lean-forward="true" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="68" />
+          <folding>
+            <element signature="method#initialize#0;class#LoanClientController#0" />
+            <element signature="method#deserializeListViewLine#0;class#LoanClientController#0" />
+            <element signature="method#addMessageToLv#0;class#LoanClientController#0" />
+            <element signature="method#initMessageConsumer#0;class#LoanClientController#0" />
+            <element signature="method#initMessageProducer#0;class#LoanClientController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan-client/src/main/java/loanclient/model/LoanRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan-client/src/main/java/loanclient/model/LoanReply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/model/ClientMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bank/src/main/java/bank/gui/BankListLineView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="9" selection-start-line="9" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/gui/BankListViewLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/model/LoanRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/model/BankInterestRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/model/BankInterestReply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/model/LoanReply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/gui/ClientListViewLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bank/src/main/java/bank/gui/ListViewLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bank/src/main/java/bank/model/BankInterestRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loan-broker/src/main/java/brokerclient/gui/BrokerClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="159" column="24" lean-forward="true" selection-start-line="159" selection-start-column="24" selection-end-line="159" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#deserializeClientListViewLine#0;class#BrokerClientController#0" />
+            <element signature="method#deserializeClientListViewLine#1;class#BrokerClientController#0" />
+            <element signature="method#addListViewLineToLv#0;class#BrokerClientController#0" />
+            <element signature="method#initBrokerConsumer#0;class#BrokerClientController#0" />
+            <element signature="method#initBrokerClientConsumer#1;class#BrokerClientController#0" />
+            <element signature="method#handleBankMessage#0;class#BrokerClientController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.activemq/activemq-client/5.15.7/a086b231151aab0000feda7f8c746fb981959cab/activemq-client-5.15.7-sources.jar!/org/apache/activemq/ActiveMQMessageConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="1406" selection-start-line="1406" selection-end-line="1406" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bank/src/main/java/bank/gui/BankController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initialize#0;class#BankController#0" />
+            <element signature="method#deserializeListViewLine#0;class#BankController#0" />
+            <element signature="method#initMessageConsumer#0;class#BankController#0" />
+            <element signature="method#initMessageProducer#0;class#BankController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.27981108" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.27981108" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.27981108" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.27981108" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>loan-broker_main|loan-broker</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.27981108" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: org.openjfx:javafx-base:12-ea+2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.27981108" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
