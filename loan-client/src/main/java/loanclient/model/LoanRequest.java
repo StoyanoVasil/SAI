@@ -52,4 +52,18 @@ public class LoanRequest {
     public String toString() {
         return "ssn=" + String.valueOf(ssn) + " amount=" + String.valueOf(amount) + " time=" + String.valueOf(time);
     }
+
+    @Override
+    public boolean equals(Object o) {
+
+        if(o instanceof LoanRequest) {
+            LoanRequest req = (LoanRequest) o;
+            if(req.getAmount() == this.getAmount() &&
+                    req.getSsn() == this.getSsn() &&
+                    req.getTime() == this.getTime()) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

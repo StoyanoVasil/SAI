@@ -15,9 +15,9 @@ public class BankInterestReply {
         this.bankId = "";
     }
     
-    public BankInterestReply(double interest, String quoteId) {
+    public BankInterestReply(double interest, String quoteID) {
         this.interest = interest;
-        this.bankId = quoteId;
+        this.bankId = quoteID;
     }
 
     public double getInterest() {

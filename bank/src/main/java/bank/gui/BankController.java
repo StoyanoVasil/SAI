@@ -3,6 +3,7 @@ package bank.gui;
 import bank.messageGateway.Consumer;
 import bank.messageGateway.Producer;
 import bank.model.BankInterestReply;
+import bank.model.BankInterestRequest;
 import com.google.gson.Gson;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -11,13 +12,10 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
 import javax.jms.*;
-import javax.naming.Context;
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
 import java.net.URL;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
-import java.util.Properties;
 import java.util.ResourceBundle;
 
 public class BankController implements Initializable {
@@ -35,7 +33,7 @@ public class BankController implements Initializable {
     public TextField tfInterest;
 
     // Map to store ssn
-    private Map<ListViewLine, String> lvlToSsn;
+    private Map<ListViewLine, String> lvlToCorrelation;
 
     // consumer and producer
     private Consumer consumer;
@@ -47,17 +45,18 @@ public class BankController implements Initializable {
         this.gson = new Gson();
         this.producer = new Producer(JMS_BROKER_QUEUE_NAME);
         this.consumer = new Consumer(JMS_BANK_QUEUE_NAME);
-        this.lvlToSsn = new HashMap<>();
+        this.lvlToCorrelation = new HashMap<>();
 
         // set event listener
         this.consumer.setMessageListener(message -> {
             try {
-                // get ListViewLine from message and deserialize from JSON
-                ListViewLine lvl = deserializeListViewLine(message);
-                if (lvl == null) return;
+                // get BankInterestRequest from message and deserialize from JSON
+                BankInterestRequest req = deserializeBankInterestRequest(message);
+                if (req == null) return;
+                ListViewLine lvl = new ListViewLine(req);
 
                 // add to map
-                lvlToSsn.put(lvl, message.getJMSCorrelationID());
+                lvlToCorrelation.put(lvl, message.getJMSCorrelationID());
 
                 // add ListViewLine to the listview
                 addMessageToLv(lvl);
@@ -74,11 +73,19 @@ public class BankController implements Initializable {
             // set BankInterestReply
             double interest = Double.parseDouble(tfInterest.getText());
             ListViewLine lvl = lvBankRequestReply.getFocusModel().getFocusedItem();
-            String ssn = this.lvlToSsn.get(lvl);
-            lvl.setBankInterestReply(new BankInterestReply(interest, BANK_ID));
+            BankInterestReply reply = new BankInterestReply(interest, BANK_ID);
+            String id = this.lvlToCorrelation.get(lvl);
 
+            // create message
+            Message msg = this.producer.createMessage(this.gson.toJson(reply));
+            msg.setJMSCorrelationID(id);
             // send back reply
-            this.producer.send(lvl, ssn);
+            this.producer.send(msg);
+
+            // update ui
+            lvl.setBankInterestReply(reply);
+            this.lvlToCorrelation.remove(lvl);
+            addMessageToLv(lvl);
         } catch (JMSException e) {
             e.printStackTrace();
         }
@@ -89,11 +96,11 @@ public class BankController implements Initializable {
 
     }
 
-    public ListViewLine deserializeListViewLine(Message message) {
+    public BankInterestRequest deserializeBankInterestRequest(Message message) {
 
         try {
             TextMessage msg = (TextMessage) message;
-            return this.gson.fromJson(msg.getText(), ListViewLine.class);
+            return this.gson.fromJson(msg.getText(), BankInterestRequest.class);
         } catch (JMSException e) {
             e.printStackTrace();
             return null;
@@ -103,6 +110,14 @@ public class BankController implements Initializable {
     public void addMessageToLv(ListViewLine lvl) {
 
         Platform.runLater(() -> {
+            Iterator<ListViewLine> iterator = lvBankRequestReply.getItems().iterator();
+            while (iterator.hasNext()) {
+                ListViewLine temp = iterator.next();
+                if (temp.getBankInterestRequest().equals(lvl.getBankInterestRequest())) {
+                    iterator.remove();
+                    break;
+                }
+            }
             lvBankRequestReply.getItems().add(lvl);
         });
     }

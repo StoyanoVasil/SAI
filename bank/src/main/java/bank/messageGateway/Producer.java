@@ -51,11 +51,13 @@ public class Producer {
         }
     }
 
-    // TODO: ask if ok to different producer
-    public void send(ListViewLine lvl, String correlation) throws JMSException {
+    public Message createMessage(String body) throws JMSException{
 
-        Message msg = this.session.createTextMessage(this.gson.toJson(lvl));
-        msg.setJMSCorrelationID(correlation);
+        return this.session.createTextMessage(body);
+    }
+
+    public void send(Message msg) throws JMSException {
+
         this.producer.send(msg);
     }
 }

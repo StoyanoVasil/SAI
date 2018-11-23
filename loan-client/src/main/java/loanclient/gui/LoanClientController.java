@@ -8,15 +8,14 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import loanclient.messageGateway.Consumer;
 import loanclient.messageGateway.Producer;
+import loanclient.model.LoanReply;
 import loanclient.model.LoanRequest;
 
 import javax.jms.*;
-import javax.naming.Context;
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
 import java.net.URL;
+import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Properties;
+import java.util.Map;
 import java.util.ResourceBundle;
 
 public class LoanClientController implements Initializable {
@@ -38,9 +37,13 @@ public class LoanClientController implements Initializable {
     // (de)serialize object
     private Gson gson;
 
+    // map to store msgId -> LoanRequest
+    private Map<String, LoanRequest> idToRequest;
+
     public LoanClientController() {
 
         this.gson = new Gson();
+        this. idToRequest = new HashMap<>();
 
         // initialize consumer and producer
         this.producer = new Producer(JMS_BROKER_QUEUE_NAME);
@@ -48,9 +51,24 @@ public class LoanClientController implements Initializable {
 
         // set event listener
         this.consumer.setMessageListener(message -> {
-            ListViewLine lvl = deserializeListViewLine(message);
-            if(lvl == null) return;
-            addMessageToLv(lvl);
+            try {
+                LoanReply reply = deserializeLoanReply(message);
+                if(reply == null) return;
+
+                // get LoanRequest from map
+                String id = message.getJMSCorrelationID();
+                LoanRequest req = this.idToRequest.get(id);
+                ListViewLine lvl = this.getLvlForLoanRequest(req);
+                if(lvl == null) return;
+
+                // set LoanReply
+                lvl.setLoanReply(reply);
+                addLVLToLv(lvl);
+                // remove from map
+                this.idToRequest.remove(id);
+            } catch (JMSException e) {
+                e.printStackTrace();
+            }
         });
     }
 
@@ -66,10 +84,16 @@ public class LoanClientController implements Initializable {
 
             // create the ListView line with the request and add it to lvLoanRequestReply
             ListViewLine lvl = new ListViewLine(loanRequest);
-            addMessageToLv(lvl);
+            addLVLToLv(lvl);
 
-            // send lvl
-             producer.send(lvl);
+            // create message
+            Message msg = this.producer.createMessage(this.gson.toJson(loanRequest));
+
+            // send message
+            String msgId = producer.send(msg);
+
+            // add to map
+            this.idToRequest.put(msgId, loanRequest);
         } catch (JMSException e) {
             e.printStackTrace();
         }
@@ -82,7 +106,7 @@ public class LoanClientController implements Initializable {
         tfTime.setText("30");
     }
 
-    public void addMessageToLv(ListViewLine lvl) {
+    public void addLVLToLv(ListViewLine lvl) {
 
         Platform.runLater(() -> {
             Iterator<ListViewLine> iterator = lvLoanRequestReply.getItems().iterator();
@@ -97,13 +121,23 @@ public class LoanClientController implements Initializable {
         });
     }
 
-    private ListViewLine deserializeListViewLine(Message message) {
+    private LoanReply deserializeLoanReply(Message message) {
 
         try {
             TextMessage msg = (TextMessage) message;
-            return this.gson.fromJson(msg.getText(), ListViewLine.class);
+            return this.gson.fromJson(msg.getText(), LoanReply.class);
         } catch (JMSException e) {
             return null;
         }
+    }
+
+    private ListViewLine getLvlForLoanRequest(LoanRequest req) {
+
+        for(ListViewLine lvl : this.lvLoanRequestReply.getItems()) {
+            if(req.equals(lvl.getLoanRequest())) {
+                return lvl;
+            }
+        }
+        return null;
     }
 }

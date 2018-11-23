@@ -41,4 +41,17 @@ public class BankInterestRequest {
     public String toString() {
         return "amount=" + String.valueOf(amount) + " time=" + String.valueOf(time);
     }
+
+    @Override
+    public boolean equals(Object o) {
+
+        if(o instanceof BankInterestRequest) {
+            BankInterestRequest req = (BankInterestRequest) o;
+            if(req.getAmount() == this.getAmount() &&
+                    req.getTime() == this.getTime()) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

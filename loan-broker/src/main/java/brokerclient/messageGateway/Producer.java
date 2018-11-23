@@ -1,7 +1,5 @@
 package brokerclient.messageGateway;
 
-import brokerclient.gui.BankListViewLine;
-import brokerclient.gui.ClientListViewLine;
 import com.google.gson.Gson;
 
 import javax.jms.*;
@@ -52,16 +50,13 @@ public class Producer {
         }
     }
 
-    public void send(BankListViewLine lvl, String correlation) throws JMSException {
+    public Message createMessage(String body) throws JMSException{
 
-        Message msg = this.session.createTextMessage(this.gson.toJson(lvl));
-        msg.setJMSCorrelationID(correlation);
-        this.producer.send(msg);
+        return this.session.createTextMessage(body);
     }
 
-    public void send(ClientListViewLine lvl) throws JMSException {
+    public void send(Message msg) throws JMSException {
 
-        Message msg = this.session.createTextMessage(this.gson.toJson(lvl));
         this.producer.send(msg);
     }
 }

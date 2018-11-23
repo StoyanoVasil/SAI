@@ -1,14 +1,12 @@
 package loanclient.messageGateway;
 
 import com.google.gson.Gson;
-import loanclient.gui.ListViewLine;
 
 import javax.jms.*;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import java.util.Properties;
-
 
 public class Producer {
 
@@ -51,9 +49,14 @@ public class Producer {
         }
     }
 
-    public void send(ListViewLine lvl) throws JMSException {
+    public Message createMessage(String body) throws JMSException{
 
-        Message msg = this.session.createTextMessage(this.gson.toJson(lvl));
+        return this.session.createTextMessage(body);
+    }
+
+    public String send(Message msg) throws JMSException {
+
         this.producer.send(msg);
+        return msg.getJMSMessageID();
     }
 }

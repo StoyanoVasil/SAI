@@ -11,11 +11,10 @@ import javafx.application.Platform;
 import javafx.scene.control.ListView;
 
 import javax.jms.*;
-import javax.naming.Context;
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
+import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Properties;
+import java.util.List;
+import java.util.Map;
 
 public class BrokerClientController {
 
@@ -35,7 +34,10 @@ public class BrokerClientController {
     private Producer bankProducer;
 
     // javafx objects
-    public ListView<ClientListViewLine> lvBroker;
+    public ListView<ListViewLine> lvBroker;
+
+    // map correlationId to LoanRequest
+    private Map<String, LoanRequest> idToLoanRequest;
 
     public BrokerClientController() {
 
@@ -45,62 +47,56 @@ public class BrokerClientController {
         this.bankProducer = new Producer(JMS_BANK_QUEUE_NAME);
         this.clientConsumer = new Consumer(JMS_CLIENT_INBOX_QUEUE_NAME);
         this.bankConsumer = new Consumer(JMS_BANK_INBOX_QUEUE_NAME);
+        this.idToLoanRequest = new HashMap<>();
 
         // set consumer event listeners
         this.clientConsumer.setMessageListener(message -> {
 
-            ClientListViewLine lvl = deserializeClientListViewLine(message);
-            ClientListViewLine localLvl = getRequestReply(lvl.getLoanRequest());
-            handleClientMessage(lvl);
+            try {
+                handleClientMessage(message);
+            } catch (JMSException e) {
+                e.printStackTrace();
+            }
         });
 
         this.bankConsumer.setMessageListener(message -> {
 
             try {
-                BankListViewLine blvl = deserializeBankListViewLine(message);
-                BankInterestRequest bReq = blvl.getBankInterestRequest();
-                BankInterestReply bRep = blvl.getBankInterestReply();
-
-                LoanRequest ln = new LoanRequest(Integer.parseInt(message.getJMSCorrelationID()),
-                        bReq.getAmount(), bReq.getTime());
-                LoanReply lr = new LoanReply(bRep.getInterest(), bRep.getQuoteId());
-                ClientListViewLine lvl = new ClientListViewLine(ln);
-                lvl.setLoanReply(lr);
-                handleBankMessage(lvl);
+                handleBankMessage(message);
             } catch (JMSException e) {
                 e.printStackTrace();
             }
         });
     }
 
-    public ClientListViewLine deserializeClientListViewLine(Message message) {
+    public LoanRequest deserializeLoanRequest(Message message) {
 
         try {
             TextMessage msg = (TextMessage) message;
-            return this.gson.fromJson(msg.getText(), ClientListViewLine.class);
+            return this.gson.fromJson(msg.getText(), LoanRequest.class);
         } catch (JMSException e) {
             e.printStackTrace();
             return null;
         }
     }
 
-    public BankListViewLine deserializeBankListViewLine(Message message) {
+    public BankInterestReply deserializeBankInterestReply(Message message) {
 
         try {
             TextMessage msg = (TextMessage) message;
-            return this.gson.fromJson(msg.getText(), BankListViewLine.class);
+            return this.gson.fromJson(msg.getText(), BankInterestReply.class);
         } catch (JMSException e) {
             e.printStackTrace();
             return null;
         }
     }
 
-    public void addListViewLineToLv(ClientListViewLine lvl) {
+    public void addListViewLineToLv(ListViewLine lvl) {
 
         Platform.runLater(() -> {
-            Iterator<ClientListViewLine> iterator = lvBroker.getItems().iterator();
+            Iterator<ListViewLine> iterator = lvBroker.getItems().iterator();
             while (iterator.hasNext()) {
-                ClientListViewLine temp = iterator.next();
+                ListViewLine temp = iterator.next();
                 if (temp.getLoanRequest().getSsn() == lvl.getLoanRequest().getSsn()) {
                     iterator.remove();
                     break;
@@ -110,36 +106,47 @@ public class BrokerClientController {
         });
     }
 
-    private void handleBankMessage(ClientListViewLine lvl) {
+    private void handleBankMessage(Message message)  throws JMSException {
 
-        try {
-            addListViewLineToLv(lvl);
-            this.clientProducer.send(lvl);
-        } catch (JMSException e) {
-            e.printStackTrace();
-        }
+        // get necessary information
+        BankInterestReply reply = deserializeBankInterestReply(message);
+        LoanReply rep = new LoanReply(reply.getInterest(), reply.getQuoteId());
+
+        // create message
+        Message msg = this.clientProducer.createMessage(this.gson.toJson(rep));
+        String id = message.getJMSCorrelationID();
+        msg.setJMSCorrelationID(id);
+        this.clientProducer.send(msg);
+
+        // update ui
+        ListViewLine lvl = getRequestReply(this.idToLoanRequest.get(id));
+        lvl.setLoanReply(rep);
+        addListViewLineToLv(lvl);
     }
 
-    private void handleClientMessage(ClientListViewLine lvl) {
+    private void handleClientMessage(Message message) throws JMSException {
 
-        try {
-            addListViewLineToLv(lvl);
-            LoanRequest lr = lvl.getLoanRequest();
-            BankInterestRequest bReq = new BankInterestRequest(lr.getAmount(), lr.getTime());
-            BankListViewLine blvl = new BankListViewLine(bReq);
-            String ssn = Integer.toString(lvl.getLoanRequest().getSsn());
-            this.bankProducer.send(blvl, ssn);
-        } catch (JMSException e) {
-            e.printStackTrace();
-        }
+        // get necessary information
+        LoanRequest req = deserializeLoanRequest(message);
+        ListViewLine lvl = new ListViewLine(req);
+        BankInterestRequest bReq = new BankInterestRequest(req.getAmount(), req.getTime());
+        String id = message.getJMSMessageID();
+        this.idToLoanRequest.put(id, req);
+
+        // create message
+        Message msg = this.bankProducer.createMessage(this.gson.toJson(req));
+        msg.setJMSCorrelationID(id);
+        this.bankProducer.send(msg);
+
+        // update ui
+        addListViewLineToLv(lvl);
     }
 
-    private ClientListViewLine getRequestReply(LoanRequest request) {
+    private ListViewLine getRequestReply(LoanRequest request) {
 
-        for (int i = 0; i < lvBroker.getItems().size(); i++) {
-            ClientListViewLine rr =  lvBroker.getItems().get(i);
-            if (rr.getLoanRequest() != null && rr.getLoanRequest().getSsn() == request.getSsn()) {
-                return rr;
+        for (ListViewLine lvl : this.lvBroker.getItems()) {
+            if(request.equals(lvl.getLoanRequest())) {
+                return lvl;
             }
         }
         return null;
