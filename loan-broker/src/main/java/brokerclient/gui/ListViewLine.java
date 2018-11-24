@@ -10,8 +10,8 @@ public class ListViewLine {
 	private LoanRequest loanRequest;
 	private LoanReply loanReply;
 	
-	public ListViewLine(LoanRequest bankInterestRequest) {
-		setLoanRequest(bankInterestRequest);
+	public ListViewLine(LoanRequest loanRequest) {
+		setLoanRequest(loanRequest);
 		setLoanReply(null);
 	}	
 	
