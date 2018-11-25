@@ -77,14 +77,4 @@ public class BrokerClientController {
             lvBroker.getItems().add(lvl);
         });
     }
-
-    private ListViewLine getRequestReply(LoanRequest request) {
-
-        for (ListViewLine lvl : this.lvBroker.getItems()) {
-            if(request.equals(lvl.getLoanRequest())) {
-                return lvl;
-            }
-        }
-        return null;
-    }
 }
