@@ -1,9 +1,6 @@
 package brokerclient.messageGateway;
 
-import brokerclient.model.BankInterestReply;
-import brokerclient.model.BankInterestRequest;
-import brokerclient.model.LoanReply;
-import brokerclient.model.LoanRequest;
+import brokerclient.model.*;
 
 import javax.jms.JMSException;
 import javax.jms.Message;
@@ -20,6 +17,7 @@ public class BankGateway {
     private Producer producer;
     private InterestSerializer serializer;
     private Map<String, LoanRequest> map;
+    private CreditHistoryEnricher che;
 
     public BankGateway() {
 
@@ -27,6 +25,7 @@ public class BankGateway {
         this.producer = new Producer(JMS_PRODUCER_QUEUE_NAME);
         this.serializer = new InterestSerializer();
         this.map = new HashMap<>();
+        this.che = new CreditHistoryEnricher();
 
         this.consumer.setMessageListener(message -> {
             try {
@@ -43,7 +42,8 @@ public class BankGateway {
 
     public void applyForLoan(LoanRequest req) throws JMSException {
 
-        BankInterestRequest request = new BankInterestRequest(req.getAmount(), req.getTime());
+        CreditHistory ch = this.che.getCreditHistoryForSSN(req.getSsn());
+        BankInterestRequest request = new BankInterestRequest(req.getAmount(), req.getTime(), ch.getCredit(), ch.getHistory());
         String json = this.serializer.serializeBankInterestRequest(request);
         Message msg = this.producer.createMessage(json);
         this.producer.send(msg);

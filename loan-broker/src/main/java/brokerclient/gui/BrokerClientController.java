@@ -12,8 +12,6 @@ import java.util.Iterator;
 
 public class BrokerClientController {
 
-    // connection details and queue names
-
     // Declare gateways
     private ClientGateway clientGateway;
     private BankGateway bankGateway;

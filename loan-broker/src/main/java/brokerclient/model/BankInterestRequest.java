@@ -9,6 +9,8 @@ public class BankInterestRequest {
 
     private int amount; // the ammount to borrow
     private int time; // the time-span of the loan in years
+    private int creditScore;
+    private int history;
 
     public BankInterestRequest() {
         super();
@@ -16,10 +18,12 @@ public class BankInterestRequest {
         this.time = 0;
     }
 
-    public BankInterestRequest(int amount, int time) {
+    public BankInterestRequest(int amount, int time, int score, int history) {
         super();
         this.amount = amount;
         this.time = time;
+        this.creditScore = score;
+        this.history = history;
     }
 
     public int getAmount() {
@@ -41,6 +45,7 @@ public class BankInterestRequest {
 
     @Override
     public String toString() {
-        return " amount=" + amount + " time=" + time;
+
+        return "Amount=" + amount + ", time=" + time + ", credit score=" + this.creditScore + ", history=" + this.history;
     }
 }
