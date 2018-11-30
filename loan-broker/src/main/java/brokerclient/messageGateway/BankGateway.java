@@ -17,7 +17,8 @@ public class BankGateway {
     private Producer producer;
     private InterestSerializer serializer;
     private Map<String, LoanRequest> map;
-    private CreditHistoryEnricher che;
+    private CreditHistoryEnricher enricher;
+    private Archiver archiver;
 
     public BankGateway() {
 
@@ -25,7 +26,8 @@ public class BankGateway {
         this.producer = new Producer(JMS_PRODUCER_QUEUE_NAME);
         this.serializer = new InterestSerializer();
         this.map = new HashMap<>();
-        this.che = new CreditHistoryEnricher();
+        this.enricher = new CreditHistoryEnricher();
+        this.archiver = new Archiver();
 
         this.consumer.setMessageListener(message -> {
             try {
@@ -34,6 +36,8 @@ public class BankGateway {
                 LoanRequest req = this.map.get(msg.getJMSCorrelationID());
                 LoanReply reply = new LoanReply(rep.getInterest(), rep.getQuoteId());
                 onBankInterestRequestArrived(req, reply);
+                this.archiver.archive(new LoanArchive(req.getSsn(), req.getAmount(),
+                        reply.getQuoteID(), reply.getInterest(), req.getTime()));
             } catch (JMSException e) {
                 e.printStackTrace();
             }
@@ -42,12 +46,13 @@ public class BankGateway {
 
     public void applyForLoan(LoanRequest req) throws JMSException {
 
-        CreditHistory ch = this.che.getCreditHistoryForSSN(req.getSsn());
+        CreditHistory ch = this.enricher.getCreditHistoryForSSN(req.getSsn());
         BankInterestRequest request = new BankInterestRequest(req.getAmount(), req.getTime(), ch.getCredit(), ch.getHistory());
         String json = this.serializer.serializeBankInterestRequest(request);
         Message msg = this.producer.createMessage(json);
         this.producer.send(msg);
-        this.map.put(msg.getJMSMessageID(), req);
+        String id = msg.getJMSMessageID();
+        this.map.put(id, req);
     }
 
     public void onBankInterestRequestArrived(LoanRequest req, LoanReply rep) { }
