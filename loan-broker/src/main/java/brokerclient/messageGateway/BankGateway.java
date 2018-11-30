@@ -2,10 +2,14 @@ package brokerclient.messageGateway;
 
 import brokerclient.model.BankInterestReply;
 import brokerclient.model.BankInterestRequest;
+import brokerclient.model.LoanReply;
+import brokerclient.model.LoanRequest;
 
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.TextMessage;
+import java.util.HashMap;
+import java.util.Map;
 
 public class BankGateway {
 
@@ -15,30 +19,36 @@ public class BankGateway {
     private Consumer consumer;
     private Producer producer;
     private InterestSerializer serializer;
+    private Map<String, LoanRequest> map;
 
     public BankGateway() {
+
         this.consumer = new Consumer(JMS_CONSUMER_QUEUE_NAME);
         this.producer = new Producer(JMS_PRODUCER_QUEUE_NAME);
         this.serializer = new InterestSerializer();
+        this.map = new HashMap<>();
 
         this.consumer.setMessageListener(message -> {
             try {
                 TextMessage msg = (TextMessage) message;
                 BankInterestReply rep = this.serializer.deserializeBankInterestReply(msg.getText());
-                onBankInterestRequestArrived(rep, message.getJMSCorrelationID());
+                LoanRequest req = this.map.get(msg.getJMSCorrelationID());
+                LoanReply reply = new LoanReply(rep.getInterest(), rep.getQuoteId());
+                onBankInterestRequestArrived(req, reply);
             } catch (JMSException e) {
                 e.printStackTrace();
             }
         });
     }
 
-    public void applyForLoan(BankInterestRequest req, String correlation) throws JMSException {
+    public void applyForLoan(LoanRequest req) throws JMSException {
 
-        String json = this.serializer.serializeBankInterestRequest(req);
+        BankInterestRequest request = new BankInterestRequest(req.getAmount(), req.getTime());
+        String json = this.serializer.serializeBankInterestRequest(request);
         Message msg = this.producer.createMessage(json);
-        msg.setJMSCorrelationID(correlation);
         this.producer.send(msg);
+        this.map.put(msg.getJMSMessageID(), req);
     }
 
-    public void onBankInterestRequestArrived(BankInterestReply rep, String correlation) { }
+    public void onBankInterestRequestArrived(LoanRequest req, LoanReply rep) { }
 }

@@ -2,18 +2,13 @@ package brokerclient.gui;
 
 import brokerclient.messageGateway.BankGateway;
 import brokerclient.messageGateway.ClientGateway;
-import brokerclient.model.BankInterestReply;
-import brokerclient.model.BankInterestRequest;
-import brokerclient.model.LoanReply;
-import brokerclient.model.LoanRequest;
+import brokerclient.model.*;
 import javafx.application.Platform;
 import javafx.scene.control.ListView;
 
 import javax.jms.JMSException;
 import javax.swing.*;
-import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Map;
 
 public class BrokerClientController {
 
@@ -26,22 +21,15 @@ public class BrokerClientController {
     // javafx objects
     public ListView<ListViewLine> lvBroker;
 
-    // map correlation to ListViewLine
-    private Map<String, ListViewLine> map;
-
     public BrokerClientController() {
-
-        this.map = new HashMap<>();
 
         // initialize gateways
         this.clientGateway = new ClientGateway() {
-            public void onLoanReplyArrived(LoanRequest req, String correlation) {
+            public void onLoanRequestArrived(LoanRequest req) {
                 try {
                     ListViewLine lvl = new ListViewLine(req);
                     addListViewLineToLv(lvl);
-                    map.put(correlation, lvl);
-                    BankInterestRequest request = new BankInterestRequest(req.getAmount(), req.getTime());
-                    bankGateway.applyForLoan(request, correlation);
+                    bankGateway.applyForLoan(req);
                 } catch (JMSException e) {
                     e.printStackTrace();
                 }
@@ -49,13 +37,13 @@ public class BrokerClientController {
         };
 
         this.bankGateway = new BankGateway() {
-            public void onBankInterestRequestArrived(BankInterestReply rep, String correlation) {
+            // TODO: return LoanRequest and LoanReply
+            public void onBankInterestRequestArrived(LoanRequest req, LoanReply rep) {
                 try {
-                    LoanReply reply = new LoanReply(rep.getInterest(), rep.getQuoteId());
-                    ListViewLine lvl = map.get(correlation);
-                    lvl.setLoanReply(reply);
+                    ListViewLine lvl = getLvlForLoanRequest(req);
+                    lvl.setLoanReply(rep);
                     addListViewLineToLv(lvl);
-                    clientGateway.replyOnRequest(reply, correlation);
+                    clientGateway.replyOnRequest(req, rep);
                 } catch (JMSException e) {
                     e.printStackTrace();
                 }
@@ -76,5 +64,15 @@ public class BrokerClientController {
             }
             lvBroker.getItems().add(lvl);
         });
+    }
+
+    private ListViewLine getLvlForLoanRequest(LoanRequest req) {
+
+        for(ListViewLine lvl : this.lvBroker.getItems()) {
+            if(req.equals(lvl.getLoanRequest())) {
+                return lvl;
+            }
+        }
+        return null;
     }
 }

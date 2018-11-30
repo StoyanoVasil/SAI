@@ -32,7 +32,7 @@ public class Gateway {
             try {
                 TextMessage msg = (TextMessage) message;
                 BankInterestRequest req = this.serializer.deserializeBankInterestRequest(msg.getText());
-                this.map.put(req, message.getJMSCorrelationID());
+                this.map.put(req, message.getJMSMessageID());
                 onBankInterestRequestArrived(req);
             } catch (JMSException e) {
                 e.printStackTrace();
