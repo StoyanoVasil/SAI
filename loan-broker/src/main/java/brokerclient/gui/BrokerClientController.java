@@ -35,7 +35,6 @@ public class BrokerClientController {
         };
 
         this.bankGateway = new BankGateway() {
-            // TODO: return LoanRequest and LoanReply
             public void onBankInterestRequestArrived(LoanRequest req, LoanReply rep) {
                 try {
                     ListViewLine lvl = getLvlForLoanRequest(req);
