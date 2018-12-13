@@ -16,7 +16,8 @@ import java.util.*;
 public class BankController implements Initializable {
 
     // connection details and queue names
-    private final String BANK_ID = "ABN";
+    private String BANK_ID;
+    private String BANK_QUEUE;
 
     // javafx objects
     public ListView<ListViewLine> lvBankRequestReply;
@@ -24,6 +25,18 @@ public class BankController implements Initializable {
 
     // declare gateway
     private Gateway gateway;
+
+    public void initData(String bankName, String bankQueue) {
+        this.BANK_ID = bankName;
+        this.BANK_QUEUE = bankQueue;
+
+        this.gateway = new Gateway(this.BANK_QUEUE) {
+            public void onBankInterestRequestArrived(BankInterestRequest req) {
+                ListViewLine lvl = new ListViewLine(req);
+                addLvlToLv(lvl);
+            }
+        };
+    }
 
     @FXML
     public void btnSendBankInterestReplyClicked(){
@@ -48,12 +61,7 @@ public class BankController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        this.gateway = new Gateway() {
-            public void onBankInterestRequestArrived(BankInterestRequest req) {
-                ListViewLine lvl = new ListViewLine(req);
-                addLvlToLv(lvl);
-            }
-        };
+
     }
 
     public void addLvlToLv(ListViewLine lvl) {

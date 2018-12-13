@@ -12,8 +12,8 @@ import java.util.Map;
 public class Gateway {
 
     // queue names
-    private static final String JMS_BANK_QUEUE_NAME = "abn-bank";
     private static final String JMS_BROKER_QUEUE_NAME = "broker-bank";
+    private String JMS_BANK_QUEUE_NAME;
 
     // Declare producer, consumer and serializer
     private Producer producer;
@@ -21,8 +21,9 @@ public class Gateway {
     private InterestSerializer serializer;
     private Map<BankInterestRequest, String> map;
 
-    public Gateway() {
+    public Gateway(String bankQueue) {
 
+        this.JMS_BANK_QUEUE_NAME = bankQueue;
         this.consumer = new Consumer(JMS_BANK_QUEUE_NAME);
         this.producer = new Producer(JMS_BROKER_QUEUE_NAME);
         this.serializer = new InterestSerializer();
