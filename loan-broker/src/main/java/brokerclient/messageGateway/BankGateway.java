@@ -22,6 +22,7 @@ public class BankGateway {
 
         this.consumer = new Consumer(JMS_CONSUMER_QUEUE_NAME);
         this.producer = new Producer(JMS_PRODUCER_QUEUE_NAME);
+//        this.producer = new Producer();
         this.serializer = new InterestSerializer();
         this.map = new HashMap<>();
 
@@ -42,6 +43,7 @@ public class BankGateway {
         String json = this.serializer.serializeBankInterestRequest(req);
         Message msg = this.producer.createMessage(json);
         this.producer.send(msg);
+//        this.producer.send(msg, "abn-bank");
         String id = msg.getJMSMessageID();
         this.map.put(id, req);
     }

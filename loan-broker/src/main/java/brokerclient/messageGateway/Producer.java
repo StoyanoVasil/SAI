@@ -5,6 +5,7 @@ import com.google.gson.Gson;
 import javax.jms.*;
 import javax.naming.Context;
 import javax.naming.InitialContext;
+import javax.naming.Name;
 import javax.naming.NamingException;
 import java.util.Properties;
 
@@ -22,6 +23,32 @@ public class Producer {
 
     // serialization object
     private Gson gson;
+
+    public Producer() {
+
+        this.gson = new Gson();
+
+        try {
+            // set properties
+            Properties props = new Properties();
+            props.setProperty(Context.INITIAL_CONTEXT_FACTORY,
+                    "org.apache.activemq.jndi.ActiveMQInitialContextFactory");
+            props.setProperty(Context.PROVIDER_URL, JMS_CONNECTION);
+
+            // create connection and session
+            Context jndiContext = new InitialContext(props);
+            ConnectionFactory connectionFactory = (ConnectionFactory) jndiContext
+                    .lookup("ConnectionFactory");
+            this.connection = connectionFactory.createConnection();
+            this.session = this.connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+
+            // create an empty producer
+            this.producer = this.session.createProducer(null);
+
+        } catch (JMSException | NamingException e) {
+            e.printStackTrace();
+        }
+    }
 
     public Producer(String queue) {
 
@@ -58,5 +85,10 @@ public class Producer {
     public void send(Message msg) throws JMSException {
 
         this.producer.send(msg);
+    }
+
+    public void send(Message msg, String queueName) throws JMSException {
+
+        this.producer.send(this.session.createQueue(queueName), msg);
     }
 }
