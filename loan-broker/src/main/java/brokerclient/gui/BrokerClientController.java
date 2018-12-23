@@ -1,9 +1,6 @@
 package brokerclient.gui;
 
-import brokerclient.messageGateway.Archiver;
-import brokerclient.messageGateway.BankGateway;
-import brokerclient.messageGateway.ClientGateway;
-import brokerclient.messageGateway.CreditHistoryEnricher;
+import brokerclient.messageGateway.*;
 import brokerclient.model.*;
 import javafx.application.Platform;
 import javafx.scene.control.ListView;
@@ -18,7 +15,7 @@ public class BrokerClientController {
 
     // Declare gateways
     private ClientGateway clientGateway;
-    private BankGateway bankGateway;
+    private ScatterGather scatterGather;
 
     // Declare Acrhiver
     private Archiver archiver;
@@ -43,26 +40,9 @@ public class BrokerClientController {
         // Initialize map
         this.bankInterestRequestLoanRequestMap = new HashMap();
 
-        // initialize gateways
-        this.clientGateway = new ClientGateway() {
-            public void onLoanRequestArrived(LoanRequest req) {
-                try {
-                    ListViewLine lvl = new ListViewLine(req);
-                    addListViewLineToLv(lvl);
-                    CreditHistory ch = enricher.getCreditHistoryForSSN(req.getSsn());
-                    BankInterestRequest request = new BankInterestRequest(req.getAmount(), req.getTime(),
-                            ch.getCredit(), ch.getHistory());
-                    bankGateway.applyForLoan(request);
-                    bankInterestRequestLoanRequestMap.put(request, req);
-                } catch (JMSException e) {
-                    e.printStackTrace();
-                }
-            }
-        };
+        this.scatterGather = new ScatterGather() {
 
-        this.bankGateway = new BankGateway() {
-
-            public void onBankInterestRequestArrived(BankInterestRequest req, BankInterestReply rep) {
+            public void onBankInterestReplyArrived(BankInterestRequest req, BankInterestReply rep) {
                 try {
                     LoanRequest request = bankInterestRequestLoanRequestMap.get(req);
                     ListViewLine lvl = getLvlForLoanRequest(request);
@@ -72,6 +52,23 @@ public class BrokerClientController {
                     clientGateway.replyOnRequest(request, reply);
                     archiver.archive(new LoanArchive(request.getSsn(), request.getAmount(),
                             reply.getQuoteID(), reply.getInterest(), request.getTime()));
+                } catch (JMSException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+
+        // initialize gateways
+        this.clientGateway = new ClientGateway() {
+            public void onLoanRequestArrived(LoanRequest req) {
+                try {
+                    ListViewLine lvl = new ListViewLine(req);
+                    addListViewLineToLv(lvl);
+                    CreditHistory ch = enricher.getCreditHistoryForSSN(req.getSsn());
+                    BankInterestRequest request = new BankInterestRequest(req.getAmount(), req.getTime(),
+                            ch.getCredit(), ch.getHistory());
+                    scatterGather.applyForLoan(request);
+                    bankInterestRequestLoanRequestMap.put(request, req);
                 } catch (JMSException e) {
                     e.printStackTrace();
                 }

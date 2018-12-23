@@ -19,7 +19,8 @@ public class Gateway {
     private Producer producer;
     private Consumer consumer;
     private InterestSerializer serializer;
-    private Map<BankInterestRequest, String> map;
+    private Map<BankInterestRequest, String> mapReqToCorrelation;
+    private Map<String, Integer> mapCorrelationToAggregation;
 
     public Gateway(String bankQueue) {
 
@@ -27,13 +28,16 @@ public class Gateway {
         this.consumer = new Consumer(JMS_BANK_QUEUE_NAME);
         this.producer = new Producer(JMS_BROKER_QUEUE_NAME);
         this.serializer = new InterestSerializer();
-        this.map = new HashMap<>();
+        this.mapReqToCorrelation = new HashMap<>();
+        this.mapCorrelationToAggregation = new HashMap<>();
 
         this.consumer.setMessageListener(message -> {
             try {
                 TextMessage msg = (TextMessage) message;
                 BankInterestRequest req = this.serializer.deserializeBankInterestRequest(msg.getText());
-                this.map.put(req, message.getJMSMessageID());
+                this.mapReqToCorrelation.put(req, message.getJMSMessageID());
+                this.mapCorrelationToAggregation.put(message.getJMSMessageID(),
+                        message.getIntProperty("aggregationId"));
                 onBankInterestRequestArrived(req);
             } catch (JMSException e) {
                 e.printStackTrace();
@@ -45,7 +49,9 @@ public class Gateway {
 
         String json = this.serializer.serializeBankInterestReply(rep);
         Message msg = this.producer.createMessage(json);
-        msg.setJMSCorrelationID(this.map.get(req));
+        String correlation = this.mapReqToCorrelation.get(req);
+        msg.setJMSCorrelationID(correlation);
+        msg.setIntProperty("aggregationId", this.mapCorrelationToAggregation.get(correlation));
         this.producer.send(msg);
     }
 

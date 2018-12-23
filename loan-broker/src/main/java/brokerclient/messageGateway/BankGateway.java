@@ -21,8 +21,7 @@ public class BankGateway {
     public BankGateway() {
 
         this.consumer = new Consumer(JMS_CONSUMER_QUEUE_NAME);
-        this.producer = new Producer(JMS_PRODUCER_QUEUE_NAME);
-//        this.producer = new Producer();
+        this.producer = new Producer();
         this.serializer = new InterestSerializer();
         this.map = new HashMap<>();
 
@@ -31,22 +30,22 @@ public class BankGateway {
                 TextMessage msg = (TextMessage) message;
                 BankInterestReply rep = this.serializer.deserializeBankInterestReply(msg.getText());
                 BankInterestRequest req = this.map.get(msg.getJMSCorrelationID());
-                onBankInterestRequestArrived(req, rep);
+                onBankInterestRequestArrived(req, rep, message.getIntProperty("aggregationId"));
             } catch (JMSException e) {
                 e.printStackTrace();
             }
         });
     }
 
-    public void applyForLoan(BankInterestRequest req) throws JMSException {
+    public void applyForLoan(BankInterestRequest req, Integer aggregationId, String queueName) throws JMSException {
 
         String json = this.serializer.serializeBankInterestRequest(req);
         Message msg = this.producer.createMessage(json);
-        this.producer.send(msg);
-//        this.producer.send(msg, "abn-bank");
+        msg.setIntProperty("aggregationId", aggregationId);
+        this.producer.send(msg, queueName);
         String id = msg.getJMSMessageID();
         this.map.put(id, req);
     }
 
-    public void onBankInterestRequestArrived(BankInterestRequest req, BankInterestReply rep) { }
+    public void onBankInterestRequestArrived(BankInterestRequest req, BankInterestReply rep, Integer aggregationId) { }
 }
